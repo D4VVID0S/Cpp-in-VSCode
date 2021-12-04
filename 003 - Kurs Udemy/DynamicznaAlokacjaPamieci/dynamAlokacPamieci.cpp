@@ -18,6 +18,7 @@ int main()
         cout << wsk[i] << endl;
 
     delete [] wsk;
+    wsk = NULL;     //po uzyciu delete ustawiamy wskaznik na NULL by nie wskazywal na zaden inny adres
 
     if (wsk != NULL)
         cout << "wsk = " << wsk << endl;
